@@ -47,7 +47,7 @@ tar -xf hadoop-2.6.5.tar.gz
 2. Spark 1.6.3
 ```
 wget https://www.apache.org/dist/spark/spark-1.6.3/spark-1.6.3-bin-hadoop2.6.tgz
-tar -xf hadoop-2.6.5.tar.gz
+tar -xf spark-1.6.3-bin-hadoop2.6.tgz
 ```
 
 Yes, The version will have to match exactly, otherwise it won't be compatible with the Janus-Distributed-OLAP Java program that uses Janus 0.2.0.
