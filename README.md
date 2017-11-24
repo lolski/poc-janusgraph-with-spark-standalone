@@ -39,9 +39,18 @@ mvn package -T 2.5C -DskipTests=true
 
 ### Download the depencencies
 1. Hadoop 2.6.5
-2. Spark 1.6.3
+```
+wget https://www.apache.org/dyn/closer.cgi/hadoop/common/hadoop-2.6.5/hadoop-2.6.5.tar.gz
+tar -xf hadoop-2.6.5.tar.gz
+```
 
-Yes. The you have to get the version exactly right as otherwise it won't be compatible with the JanusGraph 0.2.0 which are used by the Janus-Distributed-OLAP Java program.
+2. Spark 1.6.3
+```
+wget https://www.apache.org/dist/spark/spark-1.6.3/spark-1.6.3-bin-hadoop2.6.tgz
+tar -xf hadoop-2.6.5.tar.gz
+```
+
+Yes, The version will have to match exactly, otherwise it won't be compatible with the Janus-Distributed-OLAP Java program that uses Janus 0.2.0.
 
 ## Script Configuration
 Configure the path to Grakn, Hadoop, and Spark which we have built and download at the configuration section of `setup-3-nodes-cluster-for-janus-olap.sh`
